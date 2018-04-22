@@ -10,7 +10,7 @@ from .models import *
 
 class IFSCView(APIView):
 	"""
-	Endpoint accepts POST request with username and password and attempts to login to the website.
+	Endpoint accepts POST request with `ifsc`.
 	"""
 	parser_classes = (JSONParser,)
 
@@ -33,7 +33,7 @@ class IFSCView(APIView):
 
 class NameView(APIView):
 	"""
-	Endpoint accepts POST request with username and password and attempts to login to the website.
+	Endpoint accepts POST request with name and city.
 	"""
 	parser_classes = (JSONParser,)
 
@@ -55,7 +55,7 @@ class NameView(APIView):
 				'discrict': branch.district,
 				'state': branch.state,
 				})
-			
+
 		content = {
 			'details':details,
 		}
