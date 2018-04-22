@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en-us" >
+<head>
+<title>Export | Django site admin</title>
+<link rel="stylesheet" type="text/css" href="/static/admin/css/base.css" />
+<link rel="stylesheet" type="text/css" href="/static/admin/css/forms.css" />
+
+
+<meta name="robots" content="NONE,NOARCHIVE" />
+</head>
+
+
+<body class=" main-branch change-form"
+  data-admin-utc-offset="0">
+
+<!-- Container -->
+<div id="container">
+
+    
+    <!-- Header -->
+    <div id="header">
+        <div id="branding">
+        
+<h1 id="site-name"><a href="/admin/">Django administration</a></h1>
+
+        </div>
+        
+        
+        <div id="user-tools">
+            
+                Welcome,
+                <strong>admin</strong>.
+            
+            
+                
+                    <a href="/">View site</a> /
+                
+                
+                    
+                    
+                
+                
+                <a href="/admin/password_change/">Change password</a> /
+                
+                <a href="/admin/logout/">Log out</a>
+            
+        </div>
+        
+        
+        
+    </div>
+    <!-- END Header -->
+    
+<div class="breadcrumbs">
+<a href="/admin/">Home</a>
+&rsaquo; <a href="/admin/main/">Main</a>
+&rsaquo; <a href="/admin/main/branch/">Branchs</a>
+&rsaquo; 
+Export
+
+</div>
+
+    
+
+    
+        
+    
+
+    <!-- Content -->
+    <div id="content" class="colM">
+        
+        <h1>Export</h1>
+        
+<form action="" method="POST">
+  <input type='hidden' name='csrfmiddlewaretoken' value='XKlByp6OmH5u5lJkG5adldmYrzDhhuPRDQHQXR2VT6oihmU9VEVsmmxTyQx1L318' />
+
+    <fieldset class="module aligned">
+      
+        <div class="form-row">
+          
+
+          <label for="id_file_format">Format:</label>
+
+          <select name="file_format" id="id_file_format" required>
+  <option value="" selected>---</option>
+
+  <option value="0">csv</option>
+
+  <option value="1">xls</option>
+
+  <option value="2">xlsx</option>
+
+  <option value="3">tsv</option>
+
+  <option value="4">ods</option>
+
+  <option value="5">json</option>
+
+  <option value="6">yaml</option>
+
+  <option value="7">html</option>
+
+</select>
+
+          
+        </div>
+      
+    </fieldset>
+
+    <div class="submit-row">
+      <input type="submit" class="default" value="Submit">
+    </div>
+</form>
+
+        
+        <br class="clear" />
+    </div>
+    <!-- END Content -->
+
+    <div id="footer"></div>
+</div>
+<!-- END Container -->
+
+</body>
+</html>
