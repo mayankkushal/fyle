@@ -22,3 +22,7 @@ Expects `name` of the bank and `city`.
 
 
 To access `admin` click <a href="https://fyle-in.herokuapp.com/admin">here</a>
+```
+username: admin
+password: asdfghjkl
+```
