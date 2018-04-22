@@ -29,7 +29,7 @@ SECRET_KEY = 'a(tq8bl$7cjlb!i!n-6ena(a%4vcm=i_di2hjk6&6em)lgg#+3'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.herokuapp.com']
+ALLOWED_HOSTS = ['.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -81,13 +81,9 @@ WSGI_APPLICATION = 'fyle_project.wsgi.application'
 # https://docs.djangoproject.com/en/1.11/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'fyle',
-        'USER': 'name',
-        'PASSWORD': 'password',
-        'HOST': 'localhost',
-        'PORT': '',
+     'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
 }
 
