@@ -80,7 +80,7 @@ WSGI_APPLICATION = 'fyle_project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'flye',
+        'NAME': 'fyle',
         'USER': 'name',
         'PASSWORD': '',
         'HOST': 'localhost',
